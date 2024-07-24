@@ -94,7 +94,7 @@ for i in $(seq 1 $num_problems); do
     # Problem Link: https://codeforces.com/contest/$contest_name/problem/${solved_problems[$i-1]}
     # Created  By mahdich02 on dd/mm/yyyy
     # */
-    problem_link="https://codeforces.com/contest/$contest_name/problem/${solved_problems[$i-1]}"
+    problem_link="https://codeforces.com/contest/$problem_code/problem/${solved_problems[$i-1]}"
     sed -i "1i /*\nProblem Link: $problem_link\nCreated By mahdich02 on $( date +"%Y-%m-%d" )\n*/" ~/Desktop/cp-solutions/codeforces/$contest_folder/$fileName
 
 

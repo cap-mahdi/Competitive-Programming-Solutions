@@ -1,42 +1,49 @@
 /*
-Problem Link: https://codeforces.com/contest/957/problem/A
+Problem Link: https://codeforces.com/contest/1992/problem/A
 Created By mahdich02 on 2024-07-24
 */
 
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp> // Common file
-#include <ext/pb_ds/tree_policy.hpp> // Including tree_order_statistics_node_update
+#include <ext/pb_ds/tree_policy.hpp>     // Including tree_order_statistics_node_update
 #include <ext/pb_ds/detail/standard_policies.hpp>
 #define int long long int
 #define ordered_set tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
 using namespace std;
 using namespace __gnu_pbds;
 
-void no() {
+void no()
+{
     cout << "NO" << "\n";
 }
 
-void yes() {
+void yes()
+{
     cout << "YES" << "\n";
 }
 
-void solve() {
-    int a,b,c;
-    cin>>a>>b>>c;
-    int t=5;
-    while(t--) {
-        if(a<=b && a<=c) a++;
-        else if (b<=a && b<=c) b++;
-        else c++;
+void solve()
+{
+    int a, b, c;
+    cin >> a >> b >> c;
+    int t = 5;
+    while (t--)
+    {
+        if (a <= b && a <= c)
+            a++;
+        else if (b <= a && b <= c)
+            b++;
+        else
+            c++;
     }
-    cout<<a*b*c<<"\n";
+    cout << a * b * c << "\n";
 }
 
-int32_t main() {
-    //fast I/O
+int32_t main()
+{
+    // fast I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-
 
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
@@ -45,10 +52,10 @@ int32_t main() {
     // online submission
 #endif
 
-
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
